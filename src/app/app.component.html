@@ -1,6 +1,6 @@
 <app-map [registrations]="registrations" [lat]="lat" [lng]="lng" [clinics]="clinics"></app-map>
 <div class="app">
   <app-header></app-header>
-  <app-suggest-window [lat]="lat" [lng]="lng" ></app-suggest-window>
+  <app-suggest-window [clinics]="clinics" [lat]="lat" [lng]="lng" ></app-suggest-window>
   <app-doctors [registrations]="registrations"></app-doctors>
 </div>
