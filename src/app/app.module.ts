@@ -7,20 +7,24 @@ import {MapComponent} from './map/map.component';
 import {DoctorsComponent} from './doctors/doctors.component';
 import {RegisterFormComponent} from './register-form/register-form.component';
 import {SuggestWindowComponent} from './suggest-window/suggest-window.component';
-
+import {AgmCoreModule} from '@agm/core';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    MapComponent,
-    DoctorsComponent,
-    RegisterFormComponent,
-    SuggestWindowComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        MapComponent,
+        DoctorsComponent,
+        RegisterFormComponent,
+        SuggestWindowComponent
+    ],
+    imports: [
+        BrowserModule,
+        AgmCoreModule.forRoot({
+            apiKey: 'AIzaSyCEkA0wQsUI1iY8eGjkWmuSBBifgFgn838'
+        })
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
