@@ -10,6 +10,7 @@ import {SuggestWindowComponent} from './suggest-window/suggest-window.component'
 import {AgmCoreModule} from '@agm/core';
 import {HeaderComponent} from './header/header.component';
 import {BootstrapModalModule} from 'ng2-bootstrap-modal';
+import {ModalWithDoctorsComponent} from './modal-with-doctors/modal-with-doctors.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {BootstrapModalModule} from 'ng2-bootstrap-modal';
     DoctorsComponent,
     RegisterFormComponent,
     SuggestWindowComponent,
-    HeaderComponent
+    HeaderComponent,
+    ModalWithDoctorsComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,7 @@ import {BootstrapModalModule} from 'ng2-bootstrap-modal';
   ],
   providers: [],
   bootstrap: [AppComponent],
-  entryComponents: [RegisterFormComponent]
+  entryComponents: [RegisterFormComponent, ModalWithDoctorsComponent]
 })
 export class AppModule {
 }
