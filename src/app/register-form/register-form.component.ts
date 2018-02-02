@@ -20,9 +20,14 @@ export class RegisterFormComponent extends DialogComponent<RegisterForm, boolean
   lastname: string;
   pesel: number;
   registration: Registration;
+  submit = false;
+  getResponse = false;
 
   constructor(dialogService: DialogService) {
     super(dialogService);
   }
 
+  submitForm() {
+    this.submit = true;
+  }
 }
