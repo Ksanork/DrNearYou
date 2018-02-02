@@ -7,8 +7,9 @@ import {Component, OnInit} from '@angular/core';
 })
 export class MapComponent implements OnInit {
     title = 'My first AGM project';
-    lat = 51.678418;
-    lng = 7.809007;
+    lat = 51.1078852;
+    lng = 17.0385376;
+    icon = 'assets/icons/scanmed.png';
 
     constructor() {
         navigator.geolocation.getCurrentPosition(position => {
