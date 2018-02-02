@@ -1,15 +1,15 @@
 <div style="position: relative; z-index: 1; width: 500px; height: auto;">
   <div class="card">
     <div class="card-body">
-      <div class="mb-3" *ngFor="let registration of registrations" (mouseenter)="moveToDoctor(registration.clinic)" style="cursor: pointer">
+      <div class="mb-3" *ngFor="let registration of registrations" style="cursor: pointer">
         <div class="media">
-          <img class="mr-3" height="50" src="assets/icons/scanmed.png" alt="Generic placeholder image">
+          <img class="mr-3" height="50" src="{{registration.clinic.logo}}" alt="Generic placeholder image">
           <div class="media-body">
-            <h6 class="mt-0">dr. {{registration.doctor.firstname}} {{registration.doctor.secondname}}</h6>
+            <h6 class="mt-0">dr. {{registration.doctor.firstname}} {{registration.doctor.lastname}}</h6>
             <strong>{{registration.date | date: 'HH' }}:{{registration.date | date: 'mm' }}</strong><br>
             <small>700m {{registration.clinic.address}}</small>
           </div>
-          <button type="button" class="btn btn-primary btn-sm">Register</button>
+          <button type="button" (click)="showConfirm(registration)" class="btn btn-primary btn-sm">Register</button>
         </div>
       </div>
     </div>

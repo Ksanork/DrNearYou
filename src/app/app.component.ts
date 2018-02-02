@@ -9,7 +9,7 @@ import {Clinic, Doctor, Registration} from './models';
 export class AppComponent {
   lat = 51.1078852;
   lng = 17.0385376;
-  doctors: Doctor[] = [{id: 1, firstname: 'Jan', secondname: 'Kowalski'}];
+  doctors: Doctor[] = [{id: 1, firstname: 'Jan', lastname: 'Kowalski'}];
   clinics: Clinic[] = [
     {
       id: 1,
