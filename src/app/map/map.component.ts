@@ -7,8 +7,8 @@ import {Clinic} from '../models';
   styleUrls: ['./map.component.css']
 })
 export class MapComponent implements OnInit {
-  lat = 51.1078852;
-  lng = 17.0385376;
+  @Input() lat: number;
+  @Input() lng: number;
   @Input() clinics: Array<Clinic>;
 
   constructor() {

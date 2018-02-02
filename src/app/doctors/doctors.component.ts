@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Doctor, Registration} from '../models';
+import {Clinic, Doctor, Registration} from '../models';
 
 @Component({
   selector: 'app-doctors',
@@ -15,7 +15,7 @@ export class DoctorsComponent implements OnInit {
   ngOnInit() {
   }
 
-  moveToDoctor(doctor: Doctor) {
-    console.log('move to doctor' + doctor.secondname);
+  moveToDoctor(clinic: Clinic) {
+    console.log(clinic);
   }
 }

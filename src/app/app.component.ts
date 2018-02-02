@@ -7,6 +7,8 @@ import {Clinic, Doctor, Registration} from './models';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  lat = 51.1078852;
+  lng = 17.0385376;
   doctors: Doctor[] = [{id: 1, firstname: 'Jan', secondname: 'Kowalski'}];
   clinics: Clinic[] = [
     {
