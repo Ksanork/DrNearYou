@@ -6,7 +6,6 @@ import {Component, OnInit} from '@angular/core';
     styleUrls: ['./map.component.css']
 })
 export class MapComponent implements OnInit {
-    title = 'My first AGM project';
     lat = 51.1078852;
     lng = 17.0385376;
     icon = 'assets/icons/scanmed.png';
