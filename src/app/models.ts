@@ -2,7 +2,13 @@ export class Doctor {
     id: number;
     firstname: string;
     secondname: string;
-    termin: Date;
+}
+
+export class Registration {
+  id: number;
+  doctor: Doctor;
+  clinic: Clinic;
+  date: Date;
 }
 
 export class Clinic {
@@ -14,5 +20,3 @@ export class Clinic {
     longitude: number;
     doctors: Array<Doctor>;
 }
-
-

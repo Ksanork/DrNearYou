@@ -1,19 +1,21 @@
 <div style="position: relative; z-index: 1; width: 500px; height: auto;">
-    <div class="card">
-        <div class="card-header">
-            Najbliżej Ciebie
-        </div>
-        <div class="card-body">
-            <div class="media">
-                <img class="mr-3" height="50" src="assets/icons/scanmed.png" alt="Generic placeholder image">
-                <div class="media-body">
-                    <h6 class="mt-0">dr. Jan Kowalski</h6>
-                    <strong>dostępny dziś o 14:30</strong><br>
-                    <small>Scanmed Wroclaw ul. Parkowa 16</small>
-                </div>
-                <button type="button" class="btn btn-primary btn-sm">Zarejestruj się</button>
-            </div>
-        <hr>
-        </div>
+  <div class="card">
+    <div class="card-header">
+      Near you
     </div>
+    <div class="card-body">
+      <div *ngFor="let registration of registrations" (mouseenter)="moveToDoctor(registration.clinic)" style="cursor: pointer">
+        <div class="media">
+          <img class="mr-3" height="50" src="assets/icons/scanmed.png" alt="Generic placeholder image">
+          <div class="media-body">
+            <h6 class="mt-0">dr. {{registration.doctor.firstname}} {{registration.doctor.secondname}}</h6>
+            <strong>{{registration.date}}</strong><br>
+            <small>700m {{registration.clinic.address}}</small>
+          </div>
+          <button type="button" class="btn btn-primary btn-sm">Register</button>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
 </div>

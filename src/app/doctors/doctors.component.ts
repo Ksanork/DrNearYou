@@ -1,4 +1,5 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Doctor, Registration} from '../models';
 
 @Component({
   selector: 'app-doctors',
@@ -7,9 +8,14 @@ import {Component, OnInit} from '@angular/core';
 })
 export class DoctorsComponent implements OnInit {
 
+  @Input() registrations: Array<Registration>;
+
   constructor() { }
 
   ngOnInit() {
   }
 
+  moveToDoctor(doctor: Doctor) {
+    console.log('move to doctor' + doctor.secondname);
+  }
 }
