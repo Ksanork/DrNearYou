@@ -1,8 +1,9 @@
 agm-map {
+    display: block;
     height: 100%;
     width: 100%;
     position:absolute;
-    top: 0;
+    top: 18%;
     left: 0;
     z-index: 0;
 }
