@@ -1,0 +1,13 @@
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h4 class="modal-title">{{clinic.name}}</h4>
+      <button type="button" class="close" (click)="close()">&times;</button>
+    </div>
+    <div class="modal-body">
+      <ul class="list-group">
+        <li *ngFor="let registration of registrations" class="list-group-item border-0"> dr. {{registration.doctor.firstname}} {{registration.doctor.lastname}} {{registration.date | date: 'HH' }}:{{registration.date | date: 'mm' }}       <button type="button" class="btn btn-primary btn-sm float-right">Register</button></li>
+      </ul>
+    </div>
+  </div>
+</div>
