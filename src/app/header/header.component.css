@@ -3,6 +3,7 @@ bg-white{
 }
 
 .card {
+  width: 500px;
   margin-bottom: 10px;
 }
 
