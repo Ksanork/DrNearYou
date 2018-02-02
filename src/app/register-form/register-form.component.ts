@@ -1,15 +1,28 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
+import {DialogComponent, DialogService} from 'ng2-bootstrap-modal';
+import {Registration} from '../models';
+
+export interface RegisterForm {
+  firstname: string;
+  lastname: string;
+  pesel: number;
+  registration: Registration;
+}
 
 @Component({
   selector: 'app-register-form',
   templateUrl: './register-form.component.html',
   styleUrls: ['./register-form.component.css']
 })
-export class RegisterFormComponent implements OnInit {
 
-  constructor() { }
+export class RegisterFormComponent extends DialogComponent<RegisterForm, boolean> implements RegisterForm {
+  firstname: string;
+  lastname: string;
+  pesel: number;
+  registration: Registration;
 
-  ngOnInit() {
+  constructor(dialogService: DialogService) {
+    super(dialogService);
   }
 
 }

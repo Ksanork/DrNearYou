@@ -1,0 +1,42 @@
+.suggest-block{
+  display: block;
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+.card{
+  display: block;
+}
+.content{
+    padding: 20px;
+}
+.card-header{
+  font-weight: bold;
+}
+
+.clinicName{
+  font-size: 1.5rem;
+}
+
+.clinicStreet{
+  font-size: 1.2rem;
+}
+
+.hour{
+
+
+}
+
+.doctor{
+  font-size: 1.2rem;
+}
+
+.logo{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+
+}

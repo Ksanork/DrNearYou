@@ -1,22 +1,20 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 import {Clinic, Doctor, Registration} from './models';
-import {DataService} from './services/service';
-import {DoctorsService} from './services/doctors.service';
+import {DoctorsService} from "./services/doctors.service";
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit {
+export class AppComponent {
   lat = 51.1078852;
   lng = 17.0385376;
-  constructor(
-    private _doctorsService: DoctorsService
-) {}
-
-   doctors: Doctor[] = []
-  // doctors: Doctor[] = [{id: 1, firstname: 'Jan', secondname: 'Kowalski'}];
+  doctors: Doctor[] = [{id: 1, firstname: 'Jan', secondname: 'Kowalski'}];
+    // constructor(
+    //     private _doctorsService: DoctorsService
+    // ) {}
+    // doctors: Doctor[] = []
   clinics: Clinic[] = [
     {
       id: 1,
@@ -41,13 +39,13 @@ export class AppComponent implements OnInit {
     {id: 1, clinic: this.clinics[0], doctor: this.doctors[0], date: new Date()},
     {id: 2, clinic: this.clinics[1], doctor: this.doctors[0], date: new Date()}];
 
-  ngOnInit(): void {
-    this.getAllDoctors();
-  }
-  public getAllDoctors(): void {
-    this._doctorsService
-        .getDoctors()
-        .subscribe((data: Doctor[]) => this.doctors = data);
-  }
-}
+    // ngOnInit(): void {
+    //     this.getAllDoctors();
+    // }
+    // public getAllDoctors(): void {
+    //     this._doctorsService
+    //         .getDoctors()
+    //         .subscribe((data: Doctor[]) => this.doctors = data);
+    // }
 
+}

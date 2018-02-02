@@ -1,7 +1,7 @@
 export class Doctor {
     id: number;
     firstname: string;
-    secondname: string;
+    lastname: string;
 }
 
 export class Registration {

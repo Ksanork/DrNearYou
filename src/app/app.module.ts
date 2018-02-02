@@ -9,10 +9,6 @@ import {RegisterFormComponent} from './register-form/register-form.component';
 import {SuggestWindowComponent} from './suggest-window/suggest-window.component';
 import {AgmCoreModule} from '@agm/core';
 import {HeaderComponent} from './header/header.component';
-import {DataService} from './services/service';
-import {DoctorsService} from './services/doctors.service';
-import { HttpModule } from '@angular/http';
-import {Configuration} from './app.constants';
 
 @NgModule({
     declarations: [
@@ -25,12 +21,13 @@ import {Configuration} from './app.constants';
     ],
     imports: [
         BrowserModule,
-        HttpModule,
+        // HttpModule,
         AgmCoreModule.forRoot({
             apiKey: 'AIzaSyCEkA0wQsUI1iY8eGjkWmuSBBifgFgn838'
         })
     ],
-    providers: [DataService, DoctorsService, Configuration],
+    // providers: [DataService, DoctorsService, Configuration],
+    providers: [],
     bootstrap: [AppComponent]
 })
 export class AppModule {
