@@ -8,6 +8,7 @@ import {DoctorsComponent} from './doctors/doctors.component';
 import {RegisterFormComponent} from './register-form/register-form.component';
 import {SuggestWindowComponent} from './suggest-window/suggest-window.component';
 import {AgmCoreModule} from '@agm/core';
+import {HeaderComponent} from './header/header.component';
 
 @NgModule({
     declarations: [
@@ -15,7 +16,8 @@ import {AgmCoreModule} from '@agm/core';
         MapComponent,
         DoctorsComponent,
         RegisterFormComponent,
-        SuggestWindowComponent
+        SuggestWindowComponent,
+        HeaderComponent
     ],
     imports: [
         BrowserModule,
