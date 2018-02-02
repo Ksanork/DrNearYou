@@ -1,14 +1,15 @@
-class Doctor {
+export class Doctor {
+    id: number;
     firstname: string;
     secondname: string;
     termin: Date;
 }
 
 export class Clinic {
-    id: string;
+    id: number;
     name: string;
     logo: string;
-    adress: string;
+    address: string;
     latitude: number;
     longitude: number;
     doctors: Array<Doctor>;

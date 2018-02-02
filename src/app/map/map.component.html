@@ -1,4 +1,4 @@
 <agm-map [zoom]="15" [latitude]="lat" [longitude]="lng">
-    <agm-marker [opacity]="0.9" [iconUrl]='icon' [latitude]="51.1078852" [longitude]="17.0385376"></agm-marker>
+    <agm-marker *ngFor="let clinic of CLINICS" [opacity]="0.9" [iconUrl]='clinic.logo' [latitude]="clinic.latitude" [longitude]="clinic.longitude"></agm-marker>
     <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
 </agm-map>
