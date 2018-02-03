@@ -6,3 +6,7 @@ agm-map {
     left: 0;
     z-index: 0;
 }
+
+.point{
+  width: 10px;
+}

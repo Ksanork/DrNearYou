@@ -23,6 +23,7 @@ export class SuggestWindowComponent implements OnInit {
   day:number;
   month:number;
   year:number;
+  logo:string;
 
   constructor(private dialogService: DialogService) {
   }
@@ -37,6 +38,7 @@ export class SuggestWindowComponent implements OnInit {
     this.day = this.registrations[0].date.getUTCDay();
     this.month = this.registrations[0].date.getUTCMonth();
     this.year = this.registrations[0].date.getUTCFullYear();
+    this.logo = this.clinics[0].logo;
 
     if(this.lat==0 || this.lng == 0){
        this.clinicStreet  = this.doctorName = "";
