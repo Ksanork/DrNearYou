@@ -22,6 +22,7 @@ export class MapComponent implements OnInit {
   }
 
   ngOnInit() {
+    
   }
 
   showDoctors(clinic: Clinic) {
@@ -30,4 +31,5 @@ export class MapComponent implements OnInit {
       clinic: clinic
   });
   }
+
 }
