@@ -1,5 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import {BootstrapModalModule, DialogService} from 'ng2-bootstrap-modal';
 
 
 import {AppComponent} from './app.component';
@@ -9,7 +10,7 @@ import {RegisterFormComponent} from './register-form/register-form.component';
 import {SuggestWindowComponent} from './suggest-window/suggest-window.component';
 import {AgmCoreModule} from '@agm/core';
 import {HeaderComponent} from './header/header.component';
-import {BootstrapModalModule} from 'ng2-bootstrap-modal';
+import {ModalWithDoctorsComponent} from './modal-with-doctors/modal-with-doctors.component';
 
 @NgModule({
   declarations: [
@@ -18,18 +19,22 @@ import {BootstrapModalModule} from 'ng2-bootstrap-modal';
     DoctorsComponent,
     RegisterFormComponent,
     SuggestWindowComponent,
-    HeaderComponent
+    HeaderComponent,
+    RegisterFormComponent,
+    ModalWithDoctorsComponent
   ],
   imports: [
     BrowserModule,
     BootstrapModalModule,
+    // HttpModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCEkA0wQsUI1iY8eGjkWmuSBBifgFgn838'
     })
   ],
-  providers: [],
+  // providers: [DataService, DoctorsService, Configuration],
+  providers: [DialogService],
   bootstrap: [AppComponent],
-  entryComponents: [RegisterFormComponent]
+  entryComponents: [RegisterFormComponent, ModalWithDoctorsComponent]
 })
 export class AppModule {
 }

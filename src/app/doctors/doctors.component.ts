@@ -16,7 +16,6 @@ export class DoctorsComponent implements OnInit {
   }
 
   showConfirm(registration: Registration) {
-    console.log('test');
     this.dialogService.addDialog(RegisterFormComponent, {
       registration: registration
     });
