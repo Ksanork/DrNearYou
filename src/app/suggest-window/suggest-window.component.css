@@ -2,10 +2,12 @@
   display: block;
   width: 500px;
   margin-bottom: 10px;
+
 }
 
 .card{
   display: block;
+
 }
 .content{
     padding: 20px;
@@ -15,20 +17,26 @@
 }
 
 .clinicName{
-  font-size: 1.5rem;
+  font-size: 1.0rem;
+  line-height: 10px;
 }
 
 .clinicStreet{
-  font-size: 1.2rem;
+  font-size: 1.0rem;
+  line-height: 10px;
 }
 
 .hour{
+  font-size: 1.5rem;
 
-
+}
+.ok{
+  max-width: 50px;
+  margin-right: 10px;
 }
 
 .doctor{
-  font-size: 1.2rem;
+  font-size: 1.0rem;
 }
 
 .logo{
@@ -38,5 +46,6 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 100%;
+  max-width: 200px;
 
 }

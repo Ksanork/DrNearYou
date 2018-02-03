@@ -1,22 +1,26 @@
 <div  class="card suggest-block">
   <div class="card-header">
-    Twoja Najbliższa przychodnia
+    <img class="ok" src="/assets/icons/ok.png">
+    {{clinicFound}}
   </div>
   <div class="row content">
-    <div class="col-md-3">
+    <div class="col-md-3 ">
       <img class="logo" src="/assets/icons/nfz.jpg">
     </div>
 
-    <div class="col-md-6">
+    <div class="col-md-6 ">
+      <h2 class="hour">{{hour}}:{{minutes}} {{day}}.{{month}}.{{year}}
+        </h2>
       <h1 class="clinicName">{{clinicName}}</h1>
       <h2 class="clinicStreet">{{clinicStreet}}</h2>
 
       <h2 class="doctor">{{doctorName}}</h2>
+
     </div>
 
-    <div class="col-md-3">
-      <h2 class="hour">{{hour}}</h2>
-      <input type="button" class="btn btn-primary btn-md" value="Register">
+    <div class="col-md-3 ">
+
+      <input type="button" (click)="showConfirm(registration)" class="btn btn-primary btn-md" value="Register">
     </div>
   </div>
 
