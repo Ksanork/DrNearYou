@@ -23,7 +23,7 @@ export class AppComponent {
     {
       id: 2,
       name: 'Medicover',
-      logo: 'assets/icons/medicover.svg',
+      logo: 'assets/icons/medicover.png',
       address: 'Powstańców Śląskich 9, 53-332 Wrocław, Poland',
       latitude: 51.098,
       longitude: 17.024332,
