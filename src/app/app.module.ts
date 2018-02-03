@@ -8,7 +8,7 @@ import {MapComponent} from './map/map.component';
 import {DoctorsComponent} from './doctors/doctors.component';
 import {RegisterFormComponent} from './register-form/register-form.component';
 import {SuggestWindowComponent} from './suggest-window/suggest-window.component';
-import {AgmCoreModule} from '@agm/core';
+import {AgmCoreModule, GoogleMapsAPIWrapper} from '@agm/core';
 import {HeaderComponent} from './header/header.component';
 import {ModalWithDoctorsComponent} from './modal-with-doctors/modal-with-doctors.component';
 
@@ -32,7 +32,7 @@ import {ModalWithDoctorsComponent} from './modal-with-doctors/modal-with-doctors
     })
   ],
   // providers: [DataService, DoctorsService, Configuration],
-  providers: [DialogService],
+  providers: [DialogService, GoogleMapsAPIWrapper],
   bootstrap: [AppComponent],
   entryComponents: [RegisterFormComponent, ModalWithDoctorsComponent]
 })

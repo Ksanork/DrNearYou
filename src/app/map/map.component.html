@@ -1,5 +1,4 @@
-<agm-map [zoom]="15" [latitude]="lat" [longitude]="lng">
-    <!--<agm-map-directions [origin]="origin" [destination]="destination" [waypoints]="waypoints"></agm-map-directions>-->
-    <agm-marker class="point" *ngFor="let clinic of clinics" [opacity]="0.9" (markerClick)="showDoctors(clinic)" [iconUrl]='clinic.logo' [latitude]="clinic.latitude" [longitude]="clinic.longitude"></agm-marker>
+<agm-map id="map" [zoom]="15" [latitude]="lat" [longitude]="lng">
+    <agm-marker *ngFor="let clinic of clinics" [opacity]="0.9" (markerClick)="showDoctors(clinic)" [iconUrl]='clinic.logo' [latitude]="clinic.latitude" [longitude]="clinic.longitude"></agm-marker>
     <agm-marker [latitude]="lat" [longitude]="lng"></agm-marker>
 </agm-map>
