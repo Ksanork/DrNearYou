@@ -1,5 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
+import {DialogService} from 'ng2-bootstrap-modal';
 
 
 import {AppComponent} from './app.component';
@@ -27,7 +28,7 @@ import {HeaderComponent} from './header/header.component';
         })
     ],
     // providers: [DataService, DoctorsService, Configuration],
-    providers: [],
+    providers: [DialogService],
     bootstrap: [AppComponent]
 })
 export class AppModule {
