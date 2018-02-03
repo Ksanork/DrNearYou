@@ -1,6 +1,6 @@
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
-import {DialogService} from 'ng2-bootstrap-modal';
+import {BootstrapModalModule, DialogService} from 'ng2-bootstrap-modal';
 
 
 import {AppComponent} from './app.component';
@@ -19,10 +19,13 @@ import {ModalWithDoctorsComponent} from './modal-with-doctors/modal-with-doctors
     DoctorsComponent,
     RegisterFormComponent,
     SuggestWindowComponent,
-    HeaderComponent
+    HeaderComponent,
+    RegisterFormComponent,
+    ModalWithDoctorsComponent
   ],
   imports: [
     BrowserModule,
+    BootstrapModalModule,
     // HttpModule,
     AgmCoreModule.forRoot({
       apiKey: 'AIzaSyCEkA0wQsUI1iY8eGjkWmuSBBifgFgn838'
