@@ -10,26 +10,28 @@ import {RegisterFormComponent} from './register-form/register-form.component';
 import {SuggestWindowComponent} from './suggest-window/suggest-window.component';
 import {AgmCoreModule} from '@agm/core';
 import {HeaderComponent} from './header/header.component';
+import {ModalWithDoctorsComponent} from './modal-with-doctors/modal-with-doctors.component';
 
 @NgModule({
-    declarations: [
-        AppComponent,
-        MapComponent,
-        DoctorsComponent,
-        RegisterFormComponent,
-        SuggestWindowComponent,
-        HeaderComponent
-    ],
-    imports: [
-        BrowserModule,
-        // HttpModule,
-        AgmCoreModule.forRoot({
-            apiKey: 'AIzaSyCEkA0wQsUI1iY8eGjkWmuSBBifgFgn838'
-        })
-    ],
-    // providers: [DataService, DoctorsService, Configuration],
-    providers: [DialogService],
-    bootstrap: [AppComponent]
+  declarations: [
+    AppComponent,
+    MapComponent,
+    DoctorsComponent,
+    RegisterFormComponent,
+    SuggestWindowComponent,
+    HeaderComponent
+  ],
+  imports: [
+    BrowserModule,
+    // HttpModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyCEkA0wQsUI1iY8eGjkWmuSBBifgFgn838'
+    })
+  ],
+  // providers: [DataService, DoctorsService, Configuration],
+  providers: [DialogService],
+  bootstrap: [AppComponent],
+  entryComponents: [RegisterFormComponent, ModalWithDoctorsComponent]
 })
 export class AppModule {
 }
