@@ -21,9 +21,7 @@ export class MapComponent implements OnInit {
     });
   }
 
-  ngOnInit() {
-    
-  }
+  ngOnInit() {}
 
   showDoctors(clinic: Clinic) {
     this.dialogService.addDialog(ModalWithDoctorsComponent, {
