@@ -15,6 +15,7 @@ export class Clinic {
     id: number;
     name: string;
     logo: string;
+    point: string;
     address: string;
     latitude: number;
     longitude: number;
