@@ -32,7 +32,7 @@ export class AppComponent {
     {
       id: 3,
       name: 'Medicover',
-      logo: 'assets/icons/medicover.svg',
+      logo: 'assets/icons/medicover.png',
       address: 'Strzegomska 36, 53-611 Wrocław',
       latitude: 51.113012,
       longitude: 17.000391900000068,
