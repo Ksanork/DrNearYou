@@ -1,7 +1,7 @@
 <div style="position: relative; z-index: 1; width: 500px; height: auto;">
   <div class="card">
-    <div class="card-body">
-      <div class="mb-3" *ngFor="let registration of registrations" style="cursor: pointer">
+    <div class="card-body" style="height: 310px; overflow: auto;">
+      <div class="mb-3"  *ngFor="let registration of registrations" style="cursor: pointer">
         <div class="media row"  style="margin-bottom: 10px;">
           <img class="mr-3 col-3" style="max-width: 150px; transform: translateY(50%);" height="50" src="{{registration.clinic.logo}}" alt="Generic placeholder image">
           <div class="media-body col-8">
